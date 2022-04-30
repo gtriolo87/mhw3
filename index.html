@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebProgramming - MiniHomework 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Kanit&family=Righteous&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+    <body>
+        <article>
+            <header>
+                <nav>
+                    <div id="menu">
+                        <a class="menu-item">Home</a>
+                        <a class="menu-item">Chi siamo</a>
+                        <a class="menu-item">Portfolio</a>
+                    </div>
+                    <div id="menuMobile">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
+                <div id="title">
+                    <h1>BitControl: Portfolio Aziendale</h1>
+                </div>
+            </header>
+            <section id="content">
+                <section id="ToDo" class="hidden">
+                    <section class="intro">
+                        <h2>Impianti Work in Progress</h2>
+                        <p>Di seguito gli impianti in ToDo List.</p>
+                    </section>
+                    <section id="job-ToDo">
+                    </section>
+                </section>
+
+                <section class="intro">
+                    <h2>Impianti realizzati</h2>
+                    <p>Di seguito un elenco degli impianti di automazione realizzati.</p>
+                </section>
+
+                <section id="job-list">
+                    <div class="job" data-job-id="1">
+                        <div class="job-intro" data-job-id="1" data-job-video="yes" data-job-keywords="punta gradelle depuratore">
+                            <img src="job1.jpg" />
+                            <h3 class="job-title">Depuratore Punta Gradelle</h3>
+                        </div>
+                        <div class="job-thumbnail" data-job-id="1" data-job-lat="40.658449" data-job-long="14.4178158"></div>
+                        <div class="job-description" data-job-id="1">
+                            <div class="job-info" data-job-id="1">
+                                <p>
+                                    <strong>Anno Conclusione:</strong><em>2017</em><br />
+                                    <strong>PLC/SCADA:</strong><em>SE PES (PLC Quantum)</em><br />
+                                    <strong>Cliente:</strong><em>Veolia Water Technologies Italia</em>
+                                </p>
+                            </div>
+                            <p>
+                                Sviluppo su sistema DCS Ibrido (PES) dell'impianto di depurazione di Punta Gradelle, situato a Vico Equense.
+                                L'impianto è sviluppato all'interno di una galleria ed è costituito da una prima area di grigliatura, sollevamento e dissabbiatura,
+                                una seconda area di ossidazione e filtrazione a membrane, una terza area di disinfezione UV.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job" data-job-id="2">
+                        <div class="job-intro" data-job-id="2" data-job-video="yes" data-job-keywords="amalfi depuratore veolia">
+                            <img src="job2.jpg" />
+                            <h3 class="job-title">Depuratore Amalfi</h3>
+                        </div>
+                        <div class="job-thumbnail" data-job-id="2" data-job-lat="40.632732" data-job-long="14.5945188"></div>
+                        <div class="job-description" data-job-id="2">
+                            <div class="job-info" data-job-id="2">
+                                <p>
+                                    <strong>Anno Conclusione:</strong><em>2018</em><br />
+                                    <strong>PLC/SCADA:</strong><em>SE PES (SE M580 Hot-StandBy + SE M340)</em><br />
+                                    <strong>Cliente:</strong><em>Veolia Water Technologies Italia</em>
+                                </p>
+                            </div>
+                            <p>
+                                Sviluppo su sistema DCS Ibrido (PES) dell'impianto di depurazione di Amalfi.
+                                L'impianto è costituito da 4 sollevamenti remoti che rilanciano l'acqua da trattare all'impianto. Esso è costituito da una prima parte di grigliatura e dissabbiatura,
+                                seguiti da un'equalizzazione che rilancia parte del liquame alle vasce di ossidazione situate all'interno di una galleria.
+                                Dopo l'ossidazione avviene la filtrazione a membrane e l'acqua depurata viene rilasciata per caduta in mare.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job" data-job-id="3">
+                        <div class="job-intro" data-job-id="3" data-job-video="yes" data-job-keywords="bardonecchia potabilizzatore suez smat Val susa">
+                            <img src="job3.jpg" />
+                            <h3 class="job-title">Potabilizzatore Bardonecchia</h3>
+                        </div>
+                        <div class="job-thumbnail" data-job-id="3" data-job-lat="45.0791277" data-job-long="6.7080489"></div>
+                        <div class="job-description" data-job-id="3">
+                            <div class="job-info" data-job-id="3">
+                                <p>
+                                    <strong>Anno Conclusione:</strong><em>2020</em><br />
+                                    <strong>PLC/SCADA:</strong><em>SE M580 Hot-StandBy</em><br />
+                                    <strong>Cliente:</strong><em>Suez WTAS Italy S.r.l.</em>
+                                </p>
+                            </div>
+                            <p>
+                                Sviluppo PLC del sistema di automazione e controllo del Potabilizzatore di Bardonecchia.
+                                Il depuratore è costituito da una sezione di sollevamento, la grigliatura iniziale, la filtrazione a membrane, l'ozonizzazione, la filtrazione a carbone e l'accumulo.
+                                Rifornisce con acqua potabile il Comune di Bardonecchia più tutti i comuni della Val di Susa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job" data-job-id="4">
+                        <div class="job-intro" data-job-id="4" data-job-video="yes" data-job-keywords="sambuca potabilizzatore siciliacque">
+                            <img src="job4.png" />
+                            <h3 class="job-title">Revamping Potabilizzatore Sambuca</h3>
+                        </div>
+                        <div class="job-thumbnail" data-job-id="4" data-job-lat="37.6717633" data-job-long="13.1066266"></div>
+                        <div class="job-description" data-job-id="4">
+                            <div class="job-info" data-job-id="4">
+                                <p>
+                                    <strong>Anno Conclusione:</strong><em>2021</em><br />
+                                    <strong>PLC/SCADA:</strong><em>SE GeoSCADA Expert</em><br />
+                                    <strong>Cliente:</strong><em>Siciliacque spa</em>
+                                </p>
+                            </div>
+                            <p>
+                                Revamping del sistema SCADA dell'impianto di potabilizzazione di Sambuca di Sicilia, gestito da Siciliacque.
+                                Lo SCADA è stato realizzato in doppia grafica 2D e 3D. La parte 3D è stata preceduta da rilievo in campo tramite aerofogrammetria con l'utilizzo
+                                di un drone. Le nuvole di punti ottenute sono state usate per lo sviluppo dei modelli 3D fotorealistici in seguito renderizzati ed
+                                elaborati per ottenere dei sinottici SCADA animati in 3D.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job" data-job-id="5">
+                        <div class="job-intro" data-job-id="5" data-job-video="no">
+                            <img src="job5.jpg" />
+                            <h3 class="job-title">Turbina San Giovannello</h3>
+                        </div>
+                        <div class="job-thumbnail" data-job-id="5" data-job-lat="38.0195031" data-job-long="12.5675458"></div>
+                        <div class="job-description" data-job-id="5">
+                            <div class="job-info" data-job-id="5">
+                                <p>
+                                    <strong>Anno Conclusione:</strong><em>2021</em><br />
+                                    <strong>PLC/SCADA:</strong><em>SE M340 - GeoSCADA Expert</em><br />
+                                    <strong>Cliente:</strong><em>WeCons - Siciliacque spa</em>
+                                </p>
+                            </div>
+                            <p>
+                                Sviluppo della logica PLC della microturbina installata in linea nell'impianto di Trapani "San Giovannello" di Siciliacque.
+                                L'impianto è gestito dalla società WeCons che ha progettato la microturbina. La logica prevede la regolazione delle valvole e
+                                della turbina per ottenere la massima efficienza di produzione a seconda delle condizioni idrauliche preesistenti.
+                                Il sistema SCADA di telecontrollo è stato sviluppato in ambiente 2D e 3D e consente di modificare tutti i parametri idraulici per
+                                variare le condizioni ottimali di funzionamento della turbina.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job" data-job-id="6">
+                        <div class="job-intro" data-job-id="6" data-job-video="no">
+                            <img src="job6.png" />
+                            <h3 class="job-title">Impianto Farmaceutico TEVA Sicor</h3>
+                        </div>
+                        <div class="job-thumbnail" data-job-id="6" data-job-lat="45.5370089" data-job-long="9.0542478"></div>
+                        <div class="job-description" data-job-id="6">
+                            <div class="job-info" data-job-id="6">
+                                <p>
+                                    <strong>Anno Conclusione:</strong><em>2022</em><br />
+                                    <strong>PLC/SCADA:</strong><em>Sistema DCS Emerson Delta-V</em><br />
+                                    <strong>Cliente:</strong><em>AS per Teva Pharmaceutical Industries</em>
+                                </p>
+                            </div>
+                            <p>
+                                Sviluppo su sistema DCS delle nuove centrifughe per la produzione dei principi attivi. Sviluppo interfacciamento su sistema Delta-V
+                                con un PLC Siemens S7-300 e un Siemens S7-1500 tramite protocollo Profibus-DP. Sviluppo intefaccia grafica su DCS e logiche a contorno
+                                per la gestione delle acque di scarico delle centrifughe e l'azionamento delle pompe di dosaggio.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                </section>
+                <footer>
+                    <span>
+                        Powered By <em>Giuseppe Triolo Puleio - Matr. 100/0041524</em><br />
+                        Corso di WebProgramming - Ingegneria Informatica 2021/2022<br />
+                        Università di Catania
+                    </span>
+                </footer>
+                <section id="overlay" class="hidden">
+                    <div class="close">
+                        <img src="images/x_close.png" />
+                    </div>
+                    <div class="content">
+                    </div>
+                </section>
+</article>
+    </body>
+</html>

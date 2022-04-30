@@ -1,0 +1,403 @@
+﻿/*font-family: 'Akshar', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Share Tech Mono', monospace;*/
+
+:root {
+    --primary-color: crimson;
+    --secondary-color: navy;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+article{
+    width:1000px;
+    margin:auto;
+}
+
+header {
+    background-image: url('header.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 10px;
+    width: calc(100% - 20px);
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+    header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+
+    header * {
+        z-index: 1;
+    }
+    header nav {
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    header #title {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    header #title h1 {
+        font-family: 'Kanit', sans-serif;
+        color: var(--primary-color);
+        margin: 0px;
+        background-color: rgba(255,255,255,0.8);
+        text-align: center;
+        width: 450px;
+        line-height: 35px;
+        border-radius: 50px;
+        font-size: 2rem;
+    }
+
+#menuMobile {
+    display: none;
+    border: 2px solid white;
+    width: 27px;
+    height: 27px;
+    border-radius: 10px;
+    padding:3px;
+}
+
+#menuMobile:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+    #menuMobile div {
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        margin:5px 0px;
+    } 
+#menu .menu-item{
+    display:inline-block;
+    border: 2px solid white;
+    border-radius:50px;
+    width:70px;
+    padding:5px;
+    text-align:center;
+    font-weight:bold;
+    margin:5px;
+}
+    #menu .menu-item:hover {
+        color:black;
+        background-color:white;
+    }
+
+#content {
+    border: 0px inset black;
+}
+.intro {
+    text-align: center;
+    margin: 0px;
+    margin-top:10px;
+}
+
+    .intro * {
+        margin: 0px;
+    }
+
+    .intro h2{
+        font-size:1.7rem;
+        line-height:20px;
+    }
+#job-ToDo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+    #job-ToDo .newJob{
+        display:flex;
+        flex-direction:column;
+        width:150px;
+        height:50px;
+        margin: 5px;
+        box-sizing:border-box;
+        border: 1px red solid;
+        justify-content:center;
+        align-items:center;
+    }
+
+#job-list{
+    width:calc(100% - 20px);
+    margin: 0px 10px;
+    margin-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.job {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: calc(50% - 5px);
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.job-intro {
+    position: relative;
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: 190px;
+    text-align:center;
+}
+
+    .job-intro img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .job-intro h3 {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0px auto;
+        color: white;
+        z-index: 1;
+        background-color: rgb(100 149 237 / 0.8);
+        padding:2px 10px;
+        width: max-content;
+        height: max-content;
+        border-radius: 50px;
+    }
+
+.job-thumbnail {
+    width: 50px;
+    height: 50px;
+    margin-top: -28px;
+    border: 3px solid white;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    background-image: url('gps.png');
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+    .job-thumbnail:hover {
+        background-color: var(--secondary-color);
+    }
+
+.job-description {
+    margin-top: -25px;
+}
+.job-description p {
+    margin: 20px 0px;
+    text-align:justify;
+}
+
+    .job-description .job-info {
+        margin: 5px 0px;
+        font-family: 'Share Tech Mono', monospace;
+        color: cornflowerblue;
+    }
+        .job-description .job-info h3 {
+            font-family: 'Righteous', cursive;
+            margin: 0px;
+            z-index: 1;
+        }
+
+        .job-description .job-info p {
+            margin: 0px;
+            text-align: left;
+
+        }
+
+            .job-description .job-info p em {
+                color: black;
+            }
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+footer span{
+    text-align:center;
+    line-height:15px;
+}
+
+#overlay {
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.7);
+    z-index:5;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+    #overlay.hidden {
+        display: none;
+    }
+
+    #overlay .content{
+        position:relative;
+        width:80%;
+        max-height: 80%;
+        border: 0px red solid;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+
+    #overlay .content iframe {
+        width:800px;
+        height:80vh;
+        border: 0px red solid;
+    }
+
+        #overlay .content .previewVideo {
+            width: 150px;
+            height: 150px;
+            border: 0px white solid;
+            box-sizing: border-box;
+            margin: 0px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5px;
+        }
+
+            #overlay .content .previewVideo a {
+                margin-top:5px;
+                color:white;
+                font-weight:bold;
+                padding:2px;
+                text-align:center;
+                font-size:0.7rem;
+            }
+
+            #overlay .content .previewVideo a:hover {
+                color:black;
+                background-color:white;
+            }
+
+    #overlay .close {
+        box-sizing:border-box;
+        width: 30px;
+        height: 30px;
+        padding:2px;
+        position:absolute;
+        top:20px;
+        right:20px;
+        border: 2px white solid;
+        border-radius: 10px;
+    }
+        #overlay .close img {
+            max-width: 100%;
+        }
+
+
+
+.hidden {
+    display:none;
+}
+
+.no-scroll{
+    overflow:hidden;
+}
+
+@media (max-width:1000px){
+    article {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    #menu{
+        display:none;
+    }
+    #menuMobile {
+        display: block;
+    }
+
+
+    #job-list {
+        justify-content: center;
+    }
+
+        #job-list .row-job {
+            margin: 0px;
+            width: 100%;
+        }
+
+    .job {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+
+    header #title h1 {
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+
+    #intro h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:300px) {
+    article {
+        width: 300px;
+    }
+}
